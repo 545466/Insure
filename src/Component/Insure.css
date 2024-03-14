@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 8rem;
+  height: 6rem;
+}
+.header h1 {
+  color: hsl(270, 9%, 17%);
+}
+.links {
+  display: flex;
+}
+li {
+  padding: 0rem 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+}
+li a {
+  color: gray;
+}
+li a:hover {
+  color: hsl(270, 9%, 17%);
+}
+.view {
+  background: none;
+  border: 2px solid hsl(270, 9%, 17%);
+  color: hsl(270, 9%, 17%);
+  padding: 1rem 2rem;
+}
+.view:hover {
+  background: hsl(270, 9%, 17%);
+  color: white;
+}
+.header svg {
+  display: none;
+}
+.banner {
+  background: hsl(270, 9%, 17%);
+  background: hsl(270, 9%, 17%);
+  background-image: url("/src/assets/images/bg-pattern-intro-right-desktop.svg"), url("/src/assets/images/bg-pattern-intro-left-desktop.svg");
+  background-position-x: 100%, 0% ;
+  background-position-y: 0%, 400px ;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  z-index: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8rem;
+  color: white;
+}
+.line {
+  width: 100px;
+  height: 1px;
+  margin-bottom: 2rem;
+  background: white;
+}
+.banner h1 {
+  font-size: 4rem;
+}
+.banner .get {
+  width: 45%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding: 2rem 0;
+}
+.banner .view {
+  border: 2px solid white;
+  width: fit-content;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+}
+.banner .view:hover {
+  background: white;
+  color: hsl(270, 9%, 17%);
+}
+.pic {
+  position: absolute;
+  right: 10%;
+  top: 28%;
+}
+.pic1{
+    display: none;
+}
+.different {
+  padding: 20rem 8rem 8rem 8rem;
+}
+.diffh {
+  font-size: 3rem;
+}
+.line {
+  background: gray;
+  width: 7.5rem;
+  height: 0.2rem;
+}
+.diffs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem 0rem;
+}
+.diffs h1 {
+  padding: 1rem 0;
+}
+.diffs p {
+  width: 100%;
+  max-width: 90%;
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+}
+.find {
+  background: hsl(270, 9%, 17%);
+  background-image: url("/src/assets/images/bg-pattern-how-we-work-desktop.svg");
+  background-position: 100% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  margin-top: 6rem;
+}
+.find h1 {
+  color: white;
+  font-size: 3rem;
+}
+.find .view {
+  border: 2px solid white;
+  color: white;
+  padding: 1rem 2rem;
+  height: 100%;
+}
+.find .view:hover {
+  border: 2px solid white;
+  background: white;
+  color: hsl(270, 9%, 17%);
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 8rem 4rem 8rem;
+}
+.insure {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 10%;
+  height: 10%;
+}
+.insure .socials {
+  display: flex;
+  padding: 2rem 0;
+}
+.social {
+  margin: 0.5rem;
+}
+.lines {
+  width: 100%;
+  background: gray;
+  height: 0.1rem;
+}
+.footer_links {
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.footer_links h1 {
+  font-size: 1rem;
+  color: gray;
+  padding: 2rem 0;
+}
+.link {
+  display: flex;
+  flex-direction: column;
+}
+.link a {
+  color: black;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding-bottom: 0.8rem;
+}
+
+@media (max-width: 700px) {
+  .active {
+    flex-direction: column;
+    position: absolute;
+    color: white;
+    top: 90px;
+    right: 0%;
+    height: 100vh;
+    width: 100%;
+    background: hsl(270, 9%, 17%);
+    text-align: center;
+    padding: 2.5rem 0;
+  }
+  .links {
+    display: none;
+  }
+  li {
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 1rem 0;
+  }
+  li a {
+    color: white;
+  }
+  .view {
+    color: white;
+    border-color: white;
+    padding: 1rem 7rem;
+  }
+  .views {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  .header {
+    padding: 0rem;
+    position: static;
+    width: 100%;
+    position: fixed;
+    background: white;
+  }
+  .header svg {
+    display: flex;
+    padding-right: 3rem;
+  }
+  .logo1{
+    padding-left: 3rem;
+  }
+  .banner {
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0 0rem 8rem 0rem;
+    background-image: url("/src/assets/images/bg-pattern-intro-right-mobile.svg");
+  }
+  .human{
+    padding: 0rem 2rem;
+  }
+  .banner .human {
+    order: 2;
+    text-align: center;
+  }
+  .human .view {
+    margin: auto;
+  }
+  .banner img {
+    order: 1;
+  }
+  .banner h1 {
+    font-size: 3rem;
+    padding-top: 6rem;
+  }
+  .banner .get {
+    width: 90%;
+    margin: auto;
+    line-height: 1.5rem;
+  }
+  .banner .pic {
+    position: static;
+
+    width: 500px;
+  }
+  .human .line {
+    display: none;
+  }
+  .line {
+    margin: 10rem auto 3rem auto;
+    height: 0.1rem;
+    width: 50%;
+  }
+  .pic{
+    display: none;
+  }
+  .pic1{
+    display: flex;
+    width: 100%;
+  }
+  .diffs {
+    flex-direction: column;
+    padding: 3rem 0rem;
+  }
+  .diffh {
+    text-align: center;
+  }
+  .different {
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .diff {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  .diff p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+  .find {
+    flex-direction: column;
+    padding: 3rem;
+    background-image: url("/src/assets/images/bg-pattern-how-we-work-mobile.svg");
+  }
+  .find h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .find .view {
+    margin-top: 3rem;
+  }
+  .footer_links {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer_link h1 {
+    font-size: 1rem;
+  }
+  .link a {
+    font-size: 0.9rem;
+  }
+  .insure {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo {
+    width: 50%;
+    margin-top: 4rem;
+  }
+}
